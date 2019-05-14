@@ -24,7 +24,7 @@ end
 
 def show_character_movies(character)
   films = get_character_movies_from_api(character)
-  puts 
+  puts films
   print_movies(films)
 end
 
