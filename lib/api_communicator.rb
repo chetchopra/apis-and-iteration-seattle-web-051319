@@ -12,7 +12,7 @@ def get_character_movies_from_api(character_name)
   
   results.each do |result|
     puts result["name"].downcase.length()
-    puts character_name.length()
+    puts character_name.chomp.length()
     puts result["name"].downcase == character_name
     if result["name"].downcase == character_name
       films = result["films"]
