@@ -15,6 +15,8 @@ def get_character_movies_from_api(character_name)
       films = result["films"]
     end
   end
+  
+  return films
       
 
   # iterate over the response hash to find the collection of `films` for the given
