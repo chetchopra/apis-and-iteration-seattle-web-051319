@@ -13,7 +13,7 @@ def get_character_movies_from_api(character_name)
   results.each do |result|
     if result["name"].downcase == character_name.chomp
       films = result["films"]
-      puts "FSDHJKDS"
+      response_string = RestClient.get('http://www.swapi.co/api/people/')
     end
   end
   
