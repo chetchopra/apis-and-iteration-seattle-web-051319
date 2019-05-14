@@ -8,9 +8,11 @@ def get_character_movies_from_api(character_name)
   response_hash = JSON.parse(response_string)
   
   results = response_hash["results"]
+  films = NIL
   
   results.each do |result|
     if result["name"] == character_name
+      films = result["films"]
       
 
   # iterate over the response hash to find the collection of `films` for the given
