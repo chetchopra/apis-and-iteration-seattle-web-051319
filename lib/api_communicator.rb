@@ -19,11 +19,12 @@ def get_character_movies_from_api(character_name)
 end
 
 def print_movies(films)
-  puts films
+  puts "PRINITING FROM METHOD"
 end
 
 def show_character_movies(character)
   films = get_character_movies_from_api(character)
+  puts 
   print_movies(films)
 end
 
