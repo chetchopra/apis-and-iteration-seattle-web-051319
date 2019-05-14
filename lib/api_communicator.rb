@@ -11,9 +11,10 @@ def get_character_movies_from_api(character_name)
   films = []
   
   results.each do |result|
-    puts result["name"]
+    
     if result["name"] == character_name
       films = result["films"]
+      puts result["name"]
     end
   end
   
