@@ -11,10 +11,7 @@ def get_character_movies_from_api(character_name)
   films = []
   
   results.each do |result|
-    puts result["name"].downcase.length()
-    puts character_name.chomp.length()
-    puts result["name"].downcase == character_name.chomp
-    if result["name"].downcase == character_name
+    if result["name"].downcase == character_name.chomp
       films = result["films"]
       puts "FSDHJKDS"
     end
