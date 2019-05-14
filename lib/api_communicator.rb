@@ -21,8 +21,9 @@ def get_character_movies_from_api(character_name)
     film_response = RestClient.get(film)
     film_response_hash = JSON.parse(film_response)
     film_titles << film_response_hash["title"]
+  end
   
-  return films
+  return film_titles
       
 
   # iterate over the response hash to find the collection of `films` for the given
