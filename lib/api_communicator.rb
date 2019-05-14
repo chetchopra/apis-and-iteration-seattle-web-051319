@@ -38,7 +38,11 @@ def get_character_movies_from_api(character_name)
 end
 
 def print_movies(films)
-  puts films
+  count = 1
+  films.each do |film|
+    puts "#{count} #{film}"
+    count += 1
+  end
 end
 
 def show_character_movies(character)
