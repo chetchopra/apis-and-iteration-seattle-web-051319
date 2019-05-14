@@ -31,7 +31,7 @@ def get_character_movies_from_api(character_name)
 end
 
 def print_movies(films)
-  puts films[0]
+  puts films
 end
 
 def show_character_movies(character)
