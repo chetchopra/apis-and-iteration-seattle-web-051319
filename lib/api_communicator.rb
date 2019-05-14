@@ -16,6 +16,12 @@ def get_character_movies_from_api(character_name)
     end
   end
   
+  film_titles = []
+  films.each do |film|
+    film_response = RestClient.get(film)
+    film_response_hash = JSON.parse(film_response)
+    film_titles << film_response_hash["titles"]
+  
   return films
       
 
